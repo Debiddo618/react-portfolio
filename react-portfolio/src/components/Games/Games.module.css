@@ -44,6 +44,10 @@
     margin: 1rem;
 }
 
+.link:hover{
+    transform: scale(1.1);
+}
+
 .game{
     position: relative;
     width: 100%;
@@ -86,7 +90,7 @@
 
 .gameImageContainerRight {
     position: relative;
-    background-color: var(--color-dark);
+    background-color: var(--color-secondary);
     border-radius: 1rem;
     width: 75%;
     height: 100%;
