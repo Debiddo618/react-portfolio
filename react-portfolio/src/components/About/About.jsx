@@ -1,20 +1,31 @@
 import React from "react";
+import { useRef, useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
+
 
 import styles from "./About.module.css";
 import { getImageUrl } from "../../utils";
 
 export const About = () => {
+  const { ref: myRef, inView: visible, entry } = useInView();
+  const { ref: myRef1, inView: visible1, entry1 } = useInView();
+
+
+
+
+
   return (
     <section className={styles.container} id="about">
       <h2 className={styles.title}>About</h2>
       <div className={styles.content}>
         <img
+          ref={myRef}
           src={getImageUrl("about/aboutImage.png")}
           alt="Me sitting with a laptop"
-          className={styles.aboutImage}
+          className={`${visible ? styles.showLeft : styles.hiddenLeft } ${styles.aboutImage}`}
         />
         <ul className={styles.aboutItems}>
-          <li className={styles.aboutItem}>
+          <li className={`${visible ? styles.showRight : styles.hiddenRight } ${styles.aboutItem}`}>
             <img src={getImageUrl("about/frontend.png")} alt="Cursor icon" />
             <div className={styles.aboutItemText}>
               <h3>Frontend Developer</h3>
@@ -24,7 +35,7 @@ export const About = () => {
               </p>
             </div>
           </li>
-          <li className={styles.aboutItem}>
+          <li className={`${visible ? styles.showRight : styles.hiddenRight } ${styles.aboutItem}`}>
             <img src={getImageUrl("about/backend.png")} alt="Server icon" />
             <div className={styles.aboutItemText}>
               <h3>Backend Developer</h3>
@@ -34,7 +45,7 @@ export const About = () => {
               </p>
             </div>
           </li>
-          <li className={styles.aboutItem}>
+          <li className={`${visible ? styles.showRight : styles.hiddenRight } ${styles.aboutItem}`}>
             <img src={getImageUrl("about/python.png")} alt="UI icon" />
             <div className={styles.aboutItemText}>
               <h3>Python Developer</h3>
