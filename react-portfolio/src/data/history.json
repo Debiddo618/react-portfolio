@@ -1,0 +1,50 @@
+[
+  {
+    "role": "Software Engineering Intensive",
+    "organisation": "General Assembly",
+    "startDate": "Apr, 2024",
+    "endDate": "Jul, 2024",
+    "experiences": [
+      "Intensive program where I have gained practical experience with various programming languages, frameworks, libraries, and databases",
+      "App planning through wireframing, creating ER diagrams, and implementing user stories (AAU) for agile web development practices",
+      "Developed numerous web applications using JavaScript with the MERN stack and Python with Django",
+      "Deployed applications using Heroku and GitHub",
+      "Managed version control using Git and served as a project manager in a collaborative three-person GitHub workflow environmen"
+    ],
+    "imageSrc": "history/ga.png"
+  },
+  {
+    "role": "Server/Bartender",
+    "organisation": "Blue Sunday",
+    "startDate": "Oct, 2022",
+    "endDate": "May, 2023",
+    "experiences": [
+      "Taking orders and mixing drinks in fast-paced environment",
+      "Effective communicate with team members to ensure smooth service"
+    ],
+    "imageSrc": "history/bluesunday.png"
+  },
+  {
+    "role": "Professional Development Incubator",
+    "organisation": "Interclypse, Annapolis Junction, MD",
+    "startDate": "Mar, 2022",
+    "endDate": "Sep, 2022",
+    "experiences": [
+      "Learn to build a fullstack application",
+      "Backend: Spring Framework, Java, and MongoDB",
+      "Frontend: React, Redux, Axios, and MaterialUI"
+    ],
+    "imageSrc": "history/interclypse.webp"
+  },
+  {
+    "role": "Bachelor of Science - Applied Mathematics",
+    "organisation": "University of Maryland, College Park",
+    "startDate": "Aug, 2016",
+    "endDate": "Dec, 2021",
+    "experiences": [
+      "Studied pure mathematics and statistics",
+      "ComSci: 2 years Java, 1 year Python, 1 year C"
+    ],
+    "imageSrc": "history/umd.png"
+  }
+]
