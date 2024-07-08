@@ -5,6 +5,7 @@ import { About } from './components/About/About';
 import { Experience } from './components/Experience/Experience';
 import { Projects } from './components/Projects/Projects';
 import { Contact } from './components/Contact/Contact';
+import { Games } from './components/Games/Games';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <About />
         <Experience />
         <Projects />
+        <Games />
         <Contact />
       </div>
     </>

@@ -20,7 +20,7 @@
     "endDate": "May, 2023",
     "experiences": [
       "Taking orders and mixing drinks in fast-paced environment",
-      "Effective communicate with team members to ensure smooth service"
+      "Effective communicate with team members to ensure smooth service", "Training new members"
     ],
     "imageSrc": "history/bluesunday.png"
   },
@@ -32,7 +32,7 @@
     "experiences": [
       "Learn to build a fullstack application",
       "Backend: Spring Framework, Java, and MongoDB",
-      "Frontend: React, Redux, Axios, and MaterialUI"
+      "Frontend: React, Redux, Axios, BootStrap, and MaterialUI"
     ],
     "imageSrc": "history/interclypse.webp"
   },
