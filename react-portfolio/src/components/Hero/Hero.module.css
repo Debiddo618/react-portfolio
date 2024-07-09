@@ -29,12 +29,15 @@
       rgba(255, 255, 255, 0) 120%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  animation: slideInFromRight 0.5s forwards;
 }
 
 .description {
   font-size: 30px;
   font-family: var(--font-roboto);
   margin-bottom: 52px;
+  animation: slideInFromLeft 0.5s forwards;
+
 }
 
 .contactBtn {
@@ -46,6 +49,9 @@
   font-weight: 600;
   padding: 17px 26px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  animation: slideInFromBottom 0.5s forwards;
+  transition-delay: 2s;
+
 }
 
 .contactBtn:hover {
@@ -55,11 +61,8 @@
 .heroImg {
   width: 25%;
   z-index: 1;
+  animation: slideInFromTop 3s forwards, floating 3s infinite ease-in-out;
 
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
 }
 
 @keyframes floating {
@@ -115,5 +118,49 @@
 
   .heroImg {
     width: 50%;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

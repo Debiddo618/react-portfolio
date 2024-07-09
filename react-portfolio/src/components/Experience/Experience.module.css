@@ -36,6 +36,7 @@
   gap: 11px;
 }
 
+
 .skillImageContainer {
   background-color: var(--color-secondary);
   border-radius: 100%;
@@ -44,6 +45,7 @@
   justify-content: center;
   width: 120px;
   height: 120px;
+  animation: scaleAnimation 2s infinite;
 }
 
 .skillImageContainer img {
@@ -72,6 +74,7 @@
   background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
   border-radius: 10px;
   padding: 24px;
+  animation: fadeIn 0.5s forwards;
 }
 
 .historyItem img {
@@ -116,5 +119,30 @@
   .history {
     width: 100%;
     gap: 9px;
+  }
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
