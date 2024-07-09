@@ -52,7 +52,6 @@
       rgba(255, 255, 255, 0) 100%);
   background-size: 0 100%;
   background-repeat: no-repeat;
-  transition: 0.4s;
 }
 
 .aboutItem:hover {
@@ -93,26 +92,24 @@
   }
 }
 
-.hiddenLeft {
-  opacity: 0;
-  transform: translateX(-200%);
-  transition: all 5s ease;
-}
-
 .showLeft {
   opacity: 1;
   transform: translateX(0);
-  transition: all 5s ease;
+  transition: opacity 0.5s, transform 0.5s;
 }
 
-.hiddenRight {
+.hiddenLeft {
   opacity: 0;
-  transform: translateX(200%);
-  transition: all 5s ease;
+  transform: translateX(-100%);
 }
 
 .showRight {
   opacity: 1;
   transform: translateX(0);
-  transition: all 5s ease;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.hiddenRight {
+  opacity: 0;
+  transform: translateX(100%);
 }
