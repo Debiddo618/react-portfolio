@@ -7,32 +7,26 @@ import history from "../../data/history.json";
 import { getImageUrl } from "../../utils";
 
 export const Experience = () => {
-  const [visible, setVisible] = useState([]);
   const historyRefs = useRef([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const index = historyRefs.current.indexOf(entry.target);
-          if (index !== -1) {
-            setVisible((prev) => {
-              const updated = [...prev];
-              updated[index] = true;
-              return updated;
-            });
-          }
+          entry.target.classList.add(styles.slideFromRight);
+          entry.target.classList.remove(styles.hiddenRight)
+        } else {
+          entry.target.classList.remove(styles.slideFromRight);
+          entry.target.classList.add(styles.hiddenRight);
         }
       });
     });
 
     historyRefs.current.forEach((ref) => {
-      if (ref) {
-        observer.observe(ref);
-      }
+      observer.observe(ref);
     });
-
   }, []);
+
 
   return (
     <section className={styles.container} id="experience">
@@ -53,7 +47,7 @@ export const Experience = () => {
         <ul className={styles.history}>
           {history.map((historyItem, id) => {
             return (
-              <li key={id} className={styles.historyItem} ref={(el) => (historyRefs.current[id] = el)}>
+              <li key={id} className={`${styles.historyItem} ${styles.hiddenRight}`} ref={(el) => (historyRefs.current[id] = el)}>
                 <img
                   src={getImageUrl(historyItem.imageSrc)}
                   alt={`${historyItem.organisation} Logo`}
