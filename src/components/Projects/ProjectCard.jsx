@@ -2,12 +2,20 @@ import React from "react";
 
 import styles from "./ProjectCard.module.css";
 import { getImageUrl } from "../../utils";
+import AOS from 'aos'
+import { useEffect } from "react";
+import 'aos/dist/aos.css';
 
 export const ProjectCard = ({
   project: { title, imageSrc, description, skills, demo, source },
 }) => {
+
+  useEffect(() => {
+    AOS.init({ duration: 3000 })
+  }, [])
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container} data-aos="zoom-in">
       <img
         src={getImageUrl(imageSrc)}
         alt={`Image of ${title}`}
