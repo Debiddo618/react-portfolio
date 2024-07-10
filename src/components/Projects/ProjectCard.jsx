@@ -2,8 +2,8 @@ import React from "react";
 
 import styles from "./ProjectCard.module.css";
 import { getImageUrl } from "../../utils";
-import AOS from 'aos'
 import { useEffect } from "react";
+import AOS from 'aos'
 import 'aos/dist/aos.css';
 
 export const ProjectCard = ({
