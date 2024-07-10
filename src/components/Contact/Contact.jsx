@@ -2,10 +2,19 @@ import React from "react";
 
 import styles from "./Contact.module.css";
 import { getImageUrl } from "../../utils";
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+import games from "../../data/games.json";
+import { useEffect } from "react";
+
 
 export const Contact = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 })
+  }, [])
+
   return (
-    <footer id="contact" className={styles.container}>
+    <footer id="contact" className={styles.container} data-aos="flip-up">
       <div className={styles.text}>
         <h2>Contact</h2>
         <p>Feel free to reach out!</p>
