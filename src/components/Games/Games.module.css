@@ -143,3 +143,9 @@
         width: 600px;
     }
 }
+
+@media screen and (max-width: 400px){
+    .gameInfoLeft,.gameInfoRight{
+        width:300px;
+    }
+}
