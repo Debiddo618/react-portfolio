@@ -62,3 +62,28 @@
     align-items: center;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul.links{
+    display: flex;
+    align-items: flex-start;
+  }
+
+  a.linkText{
+    font-size: 1rem;
+  }
+  
+  .text p{
+    font-size: 1.5rem;
+  }
+}
