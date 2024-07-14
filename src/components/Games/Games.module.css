@@ -115,14 +115,21 @@
     width: 600px;
 }
 
-@media screen and (max-width: 1500px) {
-    .gameImageContainerLeft, .gameImageContainerRight{
-        height: 75%;
-        width: 100%;
+@media screen and (max-width: 830px) {
+    .game{
+        margin-bottom: 0%;
     }
-    .gameInfoLeft{
+
+    .gameImageContainerLeft,
+    .gameImageContainerRight {
+        height: 50%;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .gameInfoLeft {
         position: relative;
-        top: -10%;
+        top: -9%;
         right: 0;
         padding: 1rem;
         width: 600px;
@@ -130,7 +137,7 @@
 
     .gameInfoRight {
         position: relative;
-        top: -10%;
+        top: -8%;
         left: 0;
         padding: 1rem;
         width: 600px;
