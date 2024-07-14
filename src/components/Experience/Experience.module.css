@@ -153,6 +153,20 @@
   .skill p {
     font-size: 1rem;
   }
+
+  .historyItem{
+    flex-direction: column;
+  }
+
+  .historyItemDetails h3{
+    font-size: 1.75rem;
+  }
+  .historyItemDetails p{
+    font-size: 1.25rem;
+  }
+  .historyItemDetails ul li{
+    font-size: 1rem;
+  }
 }
 
 @keyframes scaleAnimation {
