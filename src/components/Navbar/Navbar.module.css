@@ -30,12 +30,34 @@
     display: flex;
     gap: 47px;
     list-style: none;
+    overflow: hidden;
 }
 
 .menuItems a {
     font-size: 25px;
     color: var(--color-text);
     text-decoration: none;
+    padding: 10px 20px;
+    position: relative;
+}
+
+
+.navLinks:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-primary);
+    z-index: -1;
+    transition: all 1s;
+    transform-origin: top left;
+    transform: rotate(-90deg);
+}
+
+.navLinks:hover:before {
+    transform: rotate(0);
 }
 
 @media screen and (max-width: 830px) {
@@ -76,5 +98,9 @@
     .menuOpen {
         display: flex;
         z-index: 1;
+    }
+
+    .navLinks:before{
+        display: none;
     }
 }

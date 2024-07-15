@@ -26,19 +26,19 @@ const Navbar = () => {
                     onClick={() => setMenuOpen(false)}
                 >
                     <li>
-                        <a href="#about">About</a>
+                        <a className={styles.navLinks} href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#experience">Experience</a>
+                        <a className={styles.navLinks} href="#experience">Experience</a>
                     </li>
                     <li>
-                        <a href="#projects">Projects</a>
+                        <a className={styles.navLinks} href="#projects">Projects</a>
                     </li>
                     <li>
-                        <a href="#games">Games</a>
+                        <a className={styles.navLinks} href="#games">Games</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a className={styles.navLinks} href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
