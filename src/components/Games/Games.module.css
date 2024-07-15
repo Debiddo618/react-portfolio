@@ -147,5 +147,12 @@
 @media screen and (max-width: 450px){
     .gameInfoLeft,.gameInfoRight{
         width:300px;
+        top:-6%;
+    }
+    .gameImageContainerLeft,.gameImageContainerRight{
+        height: 40%;
+    }
+    .games{
+        gap: 0px;
     }
 }
