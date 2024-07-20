@@ -1,17 +1,22 @@
 import React, { useEffect, useState, useRef } from "react";
 import styles from "./About.module.css";
 import { getImageUrl } from "../../utils";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const About = () => {
-  const [visible, setVisible] = useState(false);
-  const myRef = useRef();
+  // const [visible, setVisible] = useState(false);
+  // const myRef = useRef();
 
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver((entries) => {
+  //     const entry = entries[0];
+  //     setVisible(entry.isIntersecting)
+  //   })
+  //   observer.observe(myRef.current);
+  // }, [])
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-      setVisible(entry.isIntersecting)
-    })
-    observer.observe(myRef.current);
+    AOS.init({ duration: 3000 })
   }, [])
 
   return (
@@ -21,12 +26,16 @@ export const About = () => {
         <img
           src={getImageUrl("about/aboutImage.png")}
           alt="Me sitting with a laptop"
-          ref={myRef}
-          className={`${visible ? styles.showLeft : styles.hiddenLeft} ${styles.aboutImage}`}
+          className={styles.aboutImage}
+          data-aos="slide-right"
+        // ref={myRef}
+        // className={`${visible ? styles.showLeft : styles.hiddenLeft} ${styles.aboutImage}`}
         />
         <ul className={styles.aboutItems}>
           <li
-            className={`${visible ? styles.showRight : styles.hiddenRight} ${styles.aboutItem}`}
+            className={styles.aboutItem}
+            data-aos="slide-left"
+          // className={`${visible ? styles.showRight : styles.hiddenRight} ${styles.aboutItem}`}
           >
             <img src={getImageUrl("about/frontend.png")} alt="Cursor icon" />
             <div className={styles.aboutItemText}>
@@ -37,7 +46,9 @@ export const About = () => {
             </div>
           </li>
           <li
-            className={`${visible ? styles.showRight : styles.hiddenRight} ${styles.aboutItem}`}
+            className={styles.aboutItem}
+            data-aos="slide-left"
+          // className={`${visible ? styles.showRight : styles.hiddenRight} ${styles.aboutItem}`}
           >
             <img src={getImageUrl("about/backend.png")} alt="Server icon" />
             <div className={styles.aboutItemText}>
@@ -48,7 +59,9 @@ export const About = () => {
             </div>
           </li>
           <li
-            className={`${visible ? styles.showRight : styles.hiddenRight} ${styles.aboutItem}`}
+            className={styles.aboutItem}
+            data-aos="slide-left"
+          // className={`${visible ? styles.showRight : styles.hiddenRight} ${styles.aboutItem}`}
           >
             <img src={getImageUrl("about/python.png")} alt="UI icon" />
             <div className={styles.aboutItemText}>
