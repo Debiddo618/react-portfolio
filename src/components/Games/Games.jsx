@@ -27,7 +27,7 @@ export const Games = () => {
                 <h1>{game.title}</h1>
                 <h3>{game.description}</h3>
                 <div className={styles.links}>
-                  <a href={game.demo} className={styles.link}>Demo</a>
+                  <a href={game.demo} className={styles.link}>Live</a>
                   <a href={game.source} className={styles.link}>Source</a>
                 </div>
               </div>
@@ -41,7 +41,7 @@ export const Games = () => {
                 <h1>{game.title}</h1>
                 <h3>{game.description}</h3>
                 <div className={styles.links}>
-                  <a href={game.demo} className={styles.link}>Demo</a>
+                  <a href={game.demo} className={styles.link}>Live</a>
                   <a href={game.source} className={styles.link}>Source</a>
                 </div>
               </div>
