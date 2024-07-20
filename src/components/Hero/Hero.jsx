@@ -9,8 +9,7 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm David</h1>
         <p className={styles.description}>
-          I graduated in 2021 with a Bachelor of Science in Applied Mathematics from the University of Maryland, College Park. Recently, I completed a Software Engineering Bootcamp at General Assembly in 2024. I am currently seeking a position as a Junior Full-Stack Web Developer. I have hands-on experience with JavaScript using the MERN stack and Python with Django. If you'd like to learn more about my skills and experience, feel free to reach out!
-        </p>
+          Detail-oriented full stack software developer with a background in applied mathematics and customer service. Bringing over 3 years of experience in fast-paced customer service environments, adept at effective communication with clients and collaborating with team members to foster a productive work environment.        </p>
         <a href="mailto:davidzhengjobs@gmail.com" className={styles.contactBtn}>
           Contact Me
         </a>
