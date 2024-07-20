@@ -97,7 +97,7 @@
 
 .gameImageContainerLeft {
     position: relative;
-    background-color: #3d5a801c;
+    background-color: #3d5a8054;
     border-radius: 1rem;
     width: 75%;
     height: 100%;
@@ -151,7 +151,7 @@
 
 @media screen and (max-width: 1790px) {
     .game{
-        margin-bottom: 15%;
+        margin-bottom: 25%;
     }
 
     .gameImageContainerLeft,
