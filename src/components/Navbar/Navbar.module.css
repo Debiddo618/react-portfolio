@@ -15,6 +15,7 @@
     font-weight: 600;
     text-decoration: none;
     color: var(--color-text);
+    margin-right: 2rem;
 }
 
 
@@ -30,35 +31,48 @@
     display: flex;
     gap: 47px;
     list-style: none;
-    overflow: hidden;
 }
 
-.menuItems a {
+.navLinks {
     font-size: 25px;
     color: var(--color-text);
     text-decoration: none;
-    padding: 10px 20px;
     position: relative;
 }
 
-
 .navLinks:before {
     content: '';
+    width: 0;
+    height: 5px;
+    background-color: var(--color-secondary);
     position: absolute;
+    top: 100%;
     left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--color-primary);
-    z-index: -1;
-    transition: all 1s;
-    transform-origin: top left;
-    transform: rotate(-90deg);
+    transition: all 0.5s;
 }
 
 .navLinks:hover:before {
-    transform: rotate(0);
+    width: 50%;
+    transform: translateX(100%);
 }
+
+.navLinks:after {
+    content: '';
+    width: 0;
+    height: 5px;
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transition: all 0.5s;
+}
+
+.navLinks:hover:after {
+    width: 50%;
+    transform: translateX(-100%);
+}
+
+
 
 @media screen and (max-width: 830px) {
     .navbar {
@@ -98,9 +112,5 @@
     .menuOpen {
         display: flex;
         z-index: 1;
-    }
-
-    .navLinks:before{
-        display: none;
     }
 }
