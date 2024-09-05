@@ -8,7 +8,8 @@
       "Python",
       "Flask",
       "BootStrap",
-      "PostgreSQL"
+      "PostgreSQL",
+      "React"
     ],
     "demo": "https://job-tracker-react-flask.netlify.app/",
     "source": "https://github.com/Debiddo618/job-tracker"
