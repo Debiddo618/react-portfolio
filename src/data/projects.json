@@ -1,5 +1,19 @@
 [
   {
+    "title": "Job Tracker",
+    "imageSrc": "projects/jobtracker.png",
+    "description": "A job application tracker created using React and Flask",
+    "skills": [
+      "JavaScript",
+      "Python",
+      "Flask",
+      "BootStrap",
+      "PostgreSQL"
+    ],
+    "demo": "https://job-tracker-react-flask.netlify.app/",
+    "source": "https://github.com/Debiddo618/job-tracker"
+  },
+  {
     "title": "Kong's Market",
     "imageSrc": "projects/kong.png",
     "description": "An e-commerce website developed using Django and BootStrap.",
